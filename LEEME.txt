@@ -1,0 +1,31 @@
+ADMINISTRADOR DE FINCAS CUENTAS CLARAS — VERSIÓN FIEL A LOS MOCKUPS
+
+ESTRUCTURA:
+- index.html: INICIO, reproduce hero con edificio, 3 ventajas, foto aerotermia, sección de beneficios y CTA
+- servicios.html: hero aerotermia, 4 tarjetas con todos los servicios, banner aerotermia y franja inferior
+- contacto.html: hero edificio, formulario, datos de contacto, mapa ilustrativo y bloque aerotermia
+- styles.css: diseño desktop + móvil, construido sin frameworks
+- app.js: menú desplegable y envío por cliente de correo cuando se configure
+- assets/: fotografías extraídas de las composiciones de mockup facilitadas y recortadas para el diseño; logo basado en el original.
+- PREVISUALIZACIONES/: imágenes capturadas de la web renderizada, tanto en escritorio como en móvil.
+
+ICONOS: se han incrustado de forma inline en los tres HTML, evitando la incidencia de versiones anteriores.
+
+PARA VER LA WEB: descomprime y abre index.html; funciona sin conexión a Internet.
+
+ANTES DE PUBLICAR:
+1. Edita los datos [TELÉFONO], [EMAIL], [DIRECCIÓN DE LA OFICINA] y [HORARIO DE ATENCIÓN] en contacto.html.
+2. En app.js, sustituye CONTACT_EMAIL='' por el correo de atención al cliente. El formulario entonces abrirá el cliente de correo de la persona que lo envíe; NO envía por servidor. Para envío real con confirmación se recomienda integrar Google Forms u otro backend.
+3. Sustituye el mapa ilustrativo por un mapa real una vez se conozca la ubicación de la empresa.
+4. Las fotografías están basadas en recortes de las imágenes originales de los mockups. Se corresponden visualmente con los mockups, pero no son fotografías fuente de alta resolución; si consigues las fotografías originales, puedes reemplazarlas por archivos de mayor calidad.
+
+GOOGLE SITES: este HTML independiente NO se importa directamente como plantilla nativa editable de Google Sites. Se puede alojar como web externa o usar como base de reconstrucción dentro de Sites.
+
+
+ACTUALIZACIÓN: GOOGLE MAPS
+- La página contacto.html muestra un mapa incrustado de Google Maps.
+- Dirección: Calle San José de Calasanz 23, 47013 Valladolid, España.
+- Incluye enlace “Cómo llegar”, adaptable a móvil.
+- No requiere API key para la integración basada en URL pública.
+- Necesita conexión a Internet; Google Maps puede no mostrarse con bloqueadores o restricciones de cookies.
+- Al cargar el iframe, el navegador se conecta a Google Maps (consulta privacidad/cookies según corresponda).
