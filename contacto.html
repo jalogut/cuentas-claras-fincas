@@ -55,28 +55,46 @@
                 <div class="wrap contact-grid">
                     <div class="contact-left">
                         <div class="form-panel">
-                            <h2>Envíanos un mensaje</h2>
-                            <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                            <form id="formulario-contacto">
-                                <div class="form-grid">
-                                    <div class="form-field"><label for="nombre">Nombre *</label><input id="nombre"
-                                            name="nombre" autocomplete="name" required /></div>
-                                    <div class="form-field"><label for="email">Email *</label><input id="email"
-                                            name="email" type="email" autocomplete="email" required /></div>
-                                    <div class="form-field"><label for="telefono">Teléfono</label><input id="telefono"
-                                            name="telefono" type="tel" autocomplete="tel" /></div>
-                                    <div class="form-field"><label for="comunidad">Comunidad</label><input
-                                            id="comunidad" name="comunidad" autocomplete="organization" /></div>
-                                    <div class="form-field"><label for="mensaje">Mensaje *</label><textarea id="mensaje"
-                                            name="mensaje" required></textarea></div>
-                                </div><button class="button submit" type="submit">Enviar mensaje <svg class="icon"
-                                        viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"
-                                        stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M3 12h17m-7-7 7 7-7 7" />
-                                    </svg></button>
-                                <p class="form-hint" id="form-status" role="status"></p>
-                            </form>
+                            <h2>Información de contacto</h2>
+                            <p>Elige el método que prefieras y nos pondremos en contacto contigo lo antes posible.</p>
+                            <div class="contact-info">
+                                <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
+                                        fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M6.5 3.5h3l2 4.5-2.5 2c1 2.5 3 4.6 5.5 5.6l2-2.6 4.5 2v3c0 1.7-1.4 2.7-3 2.4C10 18.8 5.2 14 3.8 7c-.4-1.6.6-3.5 2.7-3.5Z" />
+                                    </svg>
+                                    <div><span>Teléfono</span><strong>648108919</strong></div>
+                                </div>
+                                <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
+                                        fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2.5" y="5" width="19" height="14" rx="2" />
+                                        <path d="m3 7.5 9 6.5 9-6.5" />
+                                    </svg>
+                                    <div><span>Email</span><strong>juan.alonso@cuentasclarasfincas.es</strong></div>
+                                </div>
+                                <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
+                                        fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 22s7.5-7.3 7.5-12.5a7.5 7.5 0 1 0-15 0C4.5 14.7 12 22 12 22Z" />
+                                        <circle cx="12" cy="9.5" r="2.4" />
+                                    </svg>
+                                    <div><span>Dirección</span><strong>Calle San José de Calasanz, 23<br />47013
+                                            Valladolid</strong></div>
+                                </div>
+                                <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
+                                        fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M12 6.5V12l3.5 2" />
+                                    </svg>
+                                    <div><span>Horario</span><strong>Lunes a viernes: 12:00 - 20:00</strong></div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="contact-right">
                         <div class="contact-location">
                             <h2>Nuestra ubicación</h2>
                             <p>Puedes encontrarnos en nuestra oficina o ponerte en contacto por los medios indicados.
@@ -91,43 +109,6 @@
                                     href="https://www.google.com/maps/dir/?api=1&amp;destination=San%20Jos%C3%A9%20de%20Calasanz%2023%2C%2047013%20Valladolid%2C%20Espa%C3%B1a"
                                     target="_blank" rel="noopener noreferrer">Cómo llegar <span
                                         aria-hidden="true">↗</span></a></div>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <div class="contact-info">
-                            <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
-                                    fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M6.5 3.5h3l2 4.5-2.5 2c1 2.5 3 4.6 5.5 5.6l2-2.6 4.5 2v3c0 1.7-1.4 2.7-3 2.4C10 18.8 5.2 14 3.8 7c-.4-1.6.6-3.5 2.7-3.5Z" />
-                                </svg>
-                                <div><span>Teléfono</span><strong>648108919</strong></div>
-                            </div>
-                            <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
-                                    fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="2.5" y="5" width="19" height="14" rx="2" />
-                                    <path d="m3 7.5 9 6.5 9-6.5" />
-                                </svg>
-                                <div><span>Email</span><strong>juan.alonso@cuentasclarasfincas.es</strong></div>
-                            </div>
-                            <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
-                                    fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M12 22s7.5-7.3 7.5-12.5a7.5 7.5 0 1 0-15 0C4.5 14.7 12 22 12 22Z" />
-                                    <circle cx="12" cy="9.5" r="2.4" />
-                                </svg>
-                                <div><span>Dirección</span><strong>Calle San José de Calasanz, 23<br />47013
-                                        Valladolid</strong></div>
-                            </div>
-                            <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"
-                                    fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="9" />
-                                    <path d="M12 6.5V12l3.5 2" />
-                                </svg>
-                                <div><span>Horario</span><strong>Lunes a viernes: 12:00 - 20:00</strong></div>
-                            </div>
                         </div>
                         <div class="contact-side-aero">
                             <div class="contact-side-aero-head">
