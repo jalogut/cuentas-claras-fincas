@@ -484,7 +484,7 @@ body.landing-page h1.eyebrow {
     z-index: -2;
     content: "";
     inset: 0;
-    background: url('assets/aerotermia-jardin.jpg') center 53%/cover no-repeat;
+    background: url('assets/aerotermia-jardin.webp') center 53%/cover no-repeat;
     filter: saturate(.9)
 }
 
@@ -526,7 +526,7 @@ body.landing-page h1.eyebrow {
     content: "";
     position: absolute;
     inset: 0 0 0 48%;
-    background: url('assets/aerotermia-cabecera.jpg') center 57%/cover no-repeat;
+    background: url('assets/aerotermia-cabecera.webp') center 57%/cover no-repeat;
     z-index: -2
 }
 
@@ -657,7 +657,7 @@ body.landing-page .page-hero h1.eyebrow {
     content: "";
     z-index: -2;
     inset: 0 0 0 55%;
-    background: url('assets/aerotermia-servicios.jpg') center/cover no-repeat
+    background: url('assets/aerotermia-servicios.webp') center/cover no-repeat
 }
 
 .aero-banner::after {
@@ -756,7 +756,7 @@ body.landing-page .page-hero h1.eyebrow {
 }
 
 .contact-hero::before {
-    background: url('assets/edificio-detalle.jpg') center center/cover no-repeat;
+    background: url('assets/edificio-detalle.webp') center center/cover no-repeat;
     inset: 0 0 0 45%
 }
 

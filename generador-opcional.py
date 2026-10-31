@@ -4,7 +4,7 @@ import re, shutil, zipfile, textwrap, json, base64
 
 OUT=Path('/mnt/data/Cuentas_Claras_Fiel_al_Mockup')
 if OUT.exists(): shutil.rmtree(OUT)
-(OUT/'assets').mkdir(parents=True)
+(OUT/'assets/backups').mkdir(parents=True)
 reference=Image.open('/mnt/data/a_clean_modern_website_design_mockup_collage_with.png').convert('RGB')
 
 def photo(filename,rect,target=(1200,750)):
@@ -45,7 +45,7 @@ for y in range(H):
 box=out.getbbox()
 if box:out=out.crop(box)
 out.thumbnail((520,520))
-out.save(OUT/'assets'/'isotipo-cuentas-claras.png')
+out.save(OUT/'assets'/'isotipo-cuentas-claras.webp')
 
 # Brand color / sections from exact mockup.
 icons={
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 map_svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" preserveAspectRatio="xMidYMid slice" aria-label="Mapa ilustrativo, dirección pendiente" role="img"><rect width="720" height="360" fill="#eef3ed"/><g fill="#bcdca9"><path d="M0 0h145v98H0zM510 18h175v94H510zM525 244h195v116H525zM0 258h115v102H0z"/></g><g fill="#dfe5d9"><path d="M185 22h190v72H185zM288 210h160v76H288zM53 145h140v65H53z"/></g><g stroke="#fff" stroke-width="24" fill="none"><path d="M0 105 720 260M120 0 390 360M0 290 720 65M540 0 455 360M0 180 720 180"/></g><g stroke="#bdcbd0" stroke-width="3" fill="none"><path d="M0 105 720 260M120 0 390 360M0 290 720 65M540 0 455 360M0 180 720 180"/></g><g stroke="#c3d0cc" stroke-width="4" fill="none"><path d="M70 0v360M210 0v360M600 0v360M0 50h720M0 330h720"/></g></svg>'''
 (OUT/'assets'/'mapa-ilustrativo.svg').write_text(map_svg,encoding='utf-8')
 
-brand=lambda: f'''<a class="brand" href="index.html" aria-label="Cuentas Claras, ir al inicio"><img src="assets/isotipo-cuentas-claras.png" alt="" class="brand-symbol"/><span><span class="brand-line">Administrador de Fincas</span><br/><span class="brand-name">Cuentas <span>Claras</span></span></span></a>'''
+brand=lambda: f'''<a class="brand" href="index.html" aria-label="Cuentas Claras, ir al inicio"><img src="assets/isotipo-cuentas-claras.webp" alt="" class="brand-symbol"/><span><span class="brand-line">Administrador de Fincas</span><br/><span class="brand-name">Cuentas <span>Claras</span></span></span></a>'''
 
 def layout(active,title,body):
     links=''.join(f'<a href="{file}" class="{"active" if active==name else ""}" {"aria-current=page" if active==name else ""}>{name}</a>' for name,file in [('Inicio','index.html'),('Servicios','servicios.html'),('Contacto','contacto.html')])
