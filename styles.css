@@ -50,11 +50,6 @@ button {
     cursor: pointer
 }
 
-h1 {
-  all: unset;
-  display: inline;
-}
-
 .icon {
     width: 24px;
     height: 24px;
@@ -238,16 +233,17 @@ h1 {
     padding: 35px 22px 41px 0
 }
 
-.eyebrow {
+.eyebrow, body.landing-page h1.eyebrow {
     display: inline-block;
     color: #dbe7ed;
     letter-spacing: 2px;
     font-size: 13px;
     font-weight: 780;
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin: 0;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: clamp(43px, 5.05vw, 66px);
     line-height: 1.055;
     letter-spacing: -1.5px;
@@ -255,7 +251,7 @@ h1 {
     font-weight: 790
 }
 
-.hero h2 em {
+.hero h1 em {
     font-style: normal;
     color: var(--green-bright)
 }
@@ -347,7 +343,7 @@ h1 {
     margin: auto auto 9px
 }
 
-.value h3 {
+.value h2 {
     font-size: 20px;
     line-height: 1.25;
     margin: 0 0 8px
@@ -386,7 +382,7 @@ h1 {
     padding: 28px 9% 30px 8%
 }
 
-.specialty-copy h3 {
+.specialty-copy h2 {
     font-size: 27px;
     line-height: 1.2;
     color: #067329;
@@ -432,7 +428,7 @@ h1 {
     padding: 31px 0 27px
 }
 
-.why h3 {
+.why h2 {
     text-align: center;
     font-size: 24px;
     margin: 0 0 22px
@@ -503,7 +499,7 @@ h1 {
     padding: 30px 0 30px 36%;
 }
 
-.cta-photo h3 {
+.cta-photo h2 {
     font-size: 21px;
     line-height: 1.2;
     margin: 0 0 5px
@@ -546,7 +542,7 @@ h1 {
     padding-bottom: 45px
 }
 
-.page-hero h2 {
+.page-hero h1 {
     font-size: clamp(39px, 4.6vw, 57px);
     line-height: 1.07;
     margin: 11px 0 14px;
@@ -561,7 +557,7 @@ h1 {
     margin: 0
 }
 
-.page-hero .eyebrow {
+.page-hero .eyebrow, body.landing-page .page-hero h1.eyebrow {
     font-size: 13px
 }
 
@@ -610,7 +606,7 @@ h1 {
     color: #82db68
 }
 
-.service-card h3 {
+.service-card h2 {
     font-size: 19px;
     line-height: 1.18;
     margin: 0;
@@ -697,7 +693,7 @@ h1 {
     height: 40px
 }
 
-.aero-banner h3 {
+.aero-banner h2 {
     margin: 0 0 2px;
     font-size: 25px;
     line-height: 1.1
@@ -766,7 +762,7 @@ h1 {
     padding: 55px 0 44px
 }
 
-.contact-hero h2 {
+.contact-hero h1 {
     font-size: 51px
 }
 
@@ -833,7 +829,7 @@ h1 {
     padding: 25px 25px 20px
 }
 
-.form-panel h3 {
+.form-panel h2 {
     margin: 0 0 7px;
     font-size: 24px
 }
@@ -933,7 +929,7 @@ h1 {
     padding-top: 20px
 }
 
-.contact-location h3 {
+.contact-location h2 {
     font-size: 20px;
     margin: 0 0 4px
 }
@@ -998,7 +994,7 @@ h1 {
     height: 26px
 }
 
-.contact-side-aero h4 {
+.contact-side-aero h3 {
     margin: 0;
     font-size: 18px;
     color: #07713a;
@@ -1096,11 +1092,11 @@ h1 {
         grid-template-columns: 51% 49%
     }
 
-    .hero h2 {
+    .hero h1 {
         font-size: 51px
     }
 
-    .value h3 {
+    .value h2 {
         font-size: 18px
     }
 
@@ -1199,7 +1195,7 @@ h1 {
         object-position: 60%
     }
 
-    .hero h2 {
+    .hero h1 {
         font-size: 53px
     }
 
@@ -1221,7 +1217,7 @@ h1 {
         height: 38px
     }
 
-    .value h3 {
+    .value h2 {
         font-size: 14px
     }
 
@@ -1243,11 +1239,11 @@ h1 {
         padding: 25px 6% 29px
     }
 
-    .specialty-copy h3 {
+    .specialty-copy h2 {
         font-size: 25px
     }
 
-    .why h3 {
+    .why h2 {
         font-size: 22px
     }
 
@@ -1268,7 +1264,7 @@ h1 {
         padding: 35px 0 35px 20%
     }
 
-    .page-hero h2 {
+    .page-hero h1 {
         font-size: 47px
     }
 
@@ -1377,7 +1373,7 @@ h1 {
         padding: 75px 0 30px
     }
 
-    .hero h2 {
+    .hero h1 {
         font-size: 42px;
         letter-spacing: -.9px;
         margin: 12px 0 13px
@@ -1387,7 +1383,7 @@ h1 {
         font-size: 14px
     }
 
-    .eyebrow {
+    .eyebrow, body.landing-page h1.eyebrow {
         font-size: 11px;
         letter-spacing: 1.2px
     }
@@ -1418,7 +1414,7 @@ h1 {
         margin-bottom: 4px
     }
 
-    .value h3 {
+    .value h2 {
         font-size: 11.5px;
         line-height: 1.15
     }
@@ -1431,7 +1427,7 @@ h1 {
         height: 205px
     }
 
-    .specialty-copy h3 {
+    .specialty-copy h2 {
         font-size: 22px
     }
 
@@ -1439,7 +1435,7 @@ h1 {
         padding: 25px 0
     }
 
-    .why h3 {
+    .why h2 {
         font-size: 21px;
         margin-bottom: 15px
     }
@@ -1465,7 +1461,7 @@ h1 {
         padding: 23px 0 24px 8%
     }
 
-    .cta-photo h3 {
+    .cta-photo h2 {
         font-size: 18px
     }
 
@@ -1477,7 +1473,7 @@ h1 {
         padding: 38px 0
     }
 
-    .page-hero h2 {
+    .page-hero h1 {
         font-size: 39px
     }
 
@@ -1504,7 +1500,7 @@ h1 {
         flex-basis: 51px
     }
 
-    .service-card h3 {
+    .service-card h2 {
         font-size: 17px
     }
 
@@ -1545,7 +1541,7 @@ h1 {
         height: 33px
     }
 
-    .aero-banner h3 {
+    .aero-banner h2 {
         font-size: 21px
     }
 
@@ -1582,7 +1578,7 @@ h1 {
         font-size: 9px
     }
 
-    .contact-hero h2 {
+    .contact-hero h1 {
         font-size: 39px
     }
 
@@ -1598,7 +1594,7 @@ h1 {
         padding: 21px 16px
     }
 
-    .form-panel h3 {
+    .form-panel h2 {
         font-size: 22px
     }
 
@@ -1660,7 +1656,6 @@ h1 {
 }
 
 @media(prefers-reduced-motion:reduce) {
-
     *,
     *::before,
     *::after {
