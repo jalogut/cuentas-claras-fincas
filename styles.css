@@ -514,7 +514,7 @@ body.landing-page h1.eyebrow {
 
 /* PAGE HERO */
 .page-hero {
-    min-height: 288px;
+    min-height: 360px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(110deg, #06263e, #123b50);
@@ -526,7 +526,7 @@ body.landing-page h1.eyebrow {
     content: "";
     position: absolute;
     inset: 0 0 0 48%;
-    background: url('assets/aerotermia-cabecera.webp') center 57%/cover no-repeat;
+    background: url('assets/servicios-cabecera.webp') center 57%/cover no-repeat;
     z-index: -2
 }
 
@@ -751,12 +751,8 @@ body.landing-page .page-hero h1.eyebrow {
 }
 
 /* CONTACT */
-.contact-hero {
-    min-height: 240px
-}
-
 .contact-hero::before {
-    background: url('assets/edificio-detalle.webp') center center/cover no-repeat;
+    background: url('assets/contacto-cabecera.webp') center center/cover no-repeat;
     inset: 0 0 0 45%
 }
 
@@ -1014,8 +1010,8 @@ body.landing-page .page-hero h1.eyebrow {
 }
 
 .contact-side-photo {
-    height: 197px;
-    margin-top: 15px;
+    /*height: 197px;*/
+    margin-top: 45px;
     border-radius: 4px;
     object-fit: cover;
     width: 100%
@@ -1326,9 +1322,9 @@ body.landing-page .page-hero h1.eyebrow {
     }
 
     .contact-side-photo {
-        grid-column: 2;
+        grid-column: 1 / -1;
         margin-top: 0;
-        height: 240px
+        /*height: 240px*/
     }
 
     .footer-inner {
@@ -1619,7 +1615,7 @@ body.landing-page .page-hero h1.eyebrow {
     }
 
     .contact-side-photo {
-        height: 190px;
+        /*height: 190px;*/
         margin-top: 13px
     }
 
