@@ -233,7 +233,8 @@ button {
     padding: 35px 22px 41px 0
 }
 
-.eyebrow, body.landing-page h1.eyebrow {
+.eyebrow,
+body.landing-page h1.eyebrow {
     display: inline-block;
     color: #dbe7ed;
     letter-spacing: 2px;
@@ -557,7 +558,8 @@ button {
     margin: 0
 }
 
-.page-hero .eyebrow, body.landing-page .page-hero h1.eyebrow {
+.page-hero .eyebrow,
+body.landing-page .page-hero h1.eyebrow {
     font-size: 13px
 }
 
@@ -1383,7 +1385,8 @@ button {
         font-size: 14px
     }
 
-    .eyebrow, body.landing-page h1.eyebrow {
+    .eyebrow,
+    body.landing-page h1.eyebrow {
         font-size: 11px;
         letter-spacing: 1.2px
     }
@@ -1656,6 +1659,7 @@ button {
 }
 
 @media(prefers-reduced-motion:reduce) {
+
     *,
     *::before,
     *::after {
@@ -1709,4 +1713,38 @@ button {
         align-items: flex-start;
         flex-direction: column
     }
+}
+
+@media (min-width: 768px) {
+    .floating-whatsapp {
+        display: none !important;
+    }
+}
+
+.floating-whatsapp {
+    position: fixed;
+    z-index: 40;
+    bottom: 26px;
+    right: 26px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--green);
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 5px 18px rgba(40, 18, 20, .13);
+    transition: transform .2s;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-3px);
+    background: var(--green-bright);
+}
+
+.floating-whatsapp svg {
+    width: 24px;
+    height: 24px;
 }
