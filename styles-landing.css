@@ -1,0 +1,156 @@
+/* CABECERA A ANCHO COMPLETO */
+.hero-home .hero-inner {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* IMAGEN DE FONDO */
+.hero-home .hero-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-home .hero-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* DEGRADADO AZUL PARA LEER EL TEXTO */
+.hero-home .hero-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(5, 32, 52, 0.96) 0%,
+        rgba(5, 32, 52, 0.85) 30%,
+        rgba(5, 32, 52, 0.45) 55%,
+        rgba(5, 32, 52, 0) 80%
+    );
+}
+
+/* TEXTO SOBRE LA IMAGEN */
+.hero-home .hero-copy {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    padding: 70px clamp(20px, 5vw, 80px);
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 768px) {
+
+    .hero-home .hero-inner {
+        min-height: 580px;
+    }
+
+    .hero-home .hero-copy {
+        padding: 50px 20px;
+    }
+
+    .hero-home .hero-inner::before {
+        background: linear-gradient(
+            90deg,
+            rgba(5, 32, 52, 0.95),
+            rgba(5, 32, 52, 0.65)
+        );
+    }
+}
+
+/* TEXTO EN LA PARTE INFERIOR DE LA CABECERA */
+.hero-home .hero-inner {
+    display: flex;
+    align-items: flex-end;
+    min-height: 520px;
+}
+
+/* TEXTO ALINEADO ABAJO Y A LA IZQUIERDA */
+.hero-home .hero-copy {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    margin: 0;
+    padding: 0 40px 40px 60px;
+    box-sizing: border-box;
+}
+
+/* DEGRADADO OSCURO EN LA PARTE INFERIOR */
+.hero-home .hero-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5, 32, 52, 0.95) 0%,
+            rgba(5, 32, 52, 0.55) 40%,
+            transparent 85%
+        ),
+        linear-gradient(
+            to right,
+            rgba(5, 32, 52, 0.6),
+            transparent 75%
+        );
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 768px) {
+    .hero-home .hero-inner {
+        min-height: 430px;
+    }
+
+    .hero-home .hero-copy {
+        padding: 0 20px 30px;
+    }
+}
+
+/* MÓVIL: RECORTAR LA PARTE SUPERIOR DE LA IMAGEN */
+@media (max-width: 768px) {
+
+    .hero-home .hero-inner {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-home .hero-media {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+    }
+
+    .hero-home .hero-media img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: auto;
+
+        width: 100%;
+        height: calc(100% + 100px);
+        max-height: none;
+
+        object-fit: cover;
+        object-position: 60% center;
+    }
+}
