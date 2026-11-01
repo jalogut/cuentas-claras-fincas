@@ -154,3 +154,83 @@
         object-position: 60% center;
     }
 }
+
+/* SECCIÓN CON SELLO COLEGIADO CENTRADO */
+.sello-colegiado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 250px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    background: linear-gradient(115deg, #052941, #062d44);
+}
+
+/* LOGO CENTRADO */
+.sello-colegiado img {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+/* VERSIÓN MÓVIL */
+@media (max-width: 768px) {
+
+    .sello-colegiado {
+        min-height: 100px;
+        padding: 30px 20px;
+    }
+
+    .sello-colegiado img {
+        width: 320px;
+        max-width: 100%;
+    }
+}
+
+/* LOGOTIPO CON BORDES SUAVIZADOS */
+.sello-colegiado img {
+    display: block;
+
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+
+    background: #ffffff;
+
+    /* Espacio interior */
+    padding: 18px 22px;
+    box-sizing: border-box;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Sombra suave */
+    box-shadow:
+        0 0 0 5px rgba(255, 255, 255, 0.06),
+        0 12px 35px rgba(0, 0, 0, 0.20);
+}
+
+/* VERSIÓN MÓVIL */
+@media (max-width: 768px) {
+
+    .sello-colegiado img {
+        width: 320px;
+        max-width: 100%;
+
+        padding: 12px 15px;
+        border-radius: 14px;
+
+        box-shadow:
+            0 0 0 3px rgba(255, 255, 255, 0.05),
+            0 8px 25px rgba(0, 0, 0, 0.18);
+    }
+}
